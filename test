@@ -28,7 +28,7 @@ class TestLinearRegression(unittest.TestCase):
     def test_sufficient_correlation(self):
         """Check if data points are sufficiently correlated."""
         correlation = np.corrcoef(df['X'], df['Y'])[0, 1]
-        self.assertGreater(abs(correlation), 0.5, "Data points are not sufficiently correlated.")
+        self.assertGreater(abs(correlation), 0.5, "Data points aren't sufficiently correlated.")
     
     def test_correct_slope_and_intercept(self):
         """Check if the code returns correct slope and intercept."""
